@@ -1,0 +1,332 @@
+:root {
+    --bgcolor: #f1f1f1;
+    --white: #ffffff;
+    --titlecolor: #1E0E62;
+    --textcolor: rgba(21, 20, 57, 0.4);
+    --h1font: 4.3rem;
+    --textfont: 2rem;
+    --secondarycolor: #EBEAED;
+}
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+.navbar button {
+    width: 8rem;
+    height: 3rem;
+    border: 2px solid var(--secondarycolor);
+    border-radius: 100px;
+    color: var(--titlecolor);
+    background-color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+.navbar button:hover{
+    background-color: var(--titlecolor);
+    color: var(--white);
+    transform: scale(1.1);
+}
+.navbar p{
+    font-size: 2rem;
+    color: var(--titlecolor);
+    font-weight: 700;
+}
+
+/* Header */
+
+header {
+    padding: 0 5rem;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftHeader {
+    width: 50%;
+}
+.leftHeader h1{
+    margin-bottom: 5rem;
+    font-size: var(--h1font);
+    color: var(--titlecolor);
+}
+.leftHeader p{
+    font-size: var(--textfont);
+    color: var(--textcolor);
+    text-align: justify;
+    width: 80%;
+}
+.rightHeader{
+    text-align: end;
+    width: 50%;
+}
+.rightHeader img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px transparent #000;
+}
+
+/* Mis Habilidades */
+
+.skills {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--bgcolor);
+    padding: 3rem 5rem;
+}
+.skills h1{
+    color: var(--titlecolor);
+    font-size: var(--h1font);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.skills > p {
+    font-size: var(--textfont);
+    color: var(--textcolor);
+    text-align: center;
+    margin-top: 3rem;
+    width: 75%;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.skillCardsContainer {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+    justify-content: space-between;
+    align-items: center;
+    height: 65%;
+    gap: 2rem;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+}
+.skillCard{
+    height: 50%;
+}
+.skillCard h2{
+    font-size: 2.5rem;
+    color: var(--titlecolor);
+    text-align: center;
+}
+.skillCard p{
+    color: var(--textcolor);
+    font-size: 2rem;
+}
+
+
+
+/* Experiencia  */
+.experiencia{
+    height: max-content;
+    padding: 0 5rem;
+}
+.expContainer{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.expContainer > h1 {
+    color: var(--titlecolor);
+    font-size: var(--h1font);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.expContainer > p {
+    color: var(--textcolor);
+    font-size: var(--textfont);
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.expBtnContainer {
+    margin-top: 5rem;
+    text-align: center;
+}
+.expBtnContainer > a {
+    background: #25DAC5;
+    border-radius: 10rem;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    display: inline-block;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid transparent;
+}
+.expBtnContainer > a:hover {
+    background: var(--white);
+    border: 2px solid #25DAC5;
+    color: var(--titlecolor);
+}
+.expContainer--grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+    gap: 2rem;
+    margin: 5rem 0;
+}
+.expCard h3 {
+    color: var(--titlecolor);
+}
+.expCard p {
+    color: var(--textcolor);
+    font-weight: 500;
+}
+.expCard img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border-top: 5px solid #25DAC5;
+    border-bottom: 5px solid transparent;
+    transition: all 0.4s;
+}
+.expCard img:hover {
+    border-bottom: 5px solid #25DAC5;
+    border-top: 5px solid transparent;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer{
+    height: 60vh;
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: var(--h1font);
+    font-weight: 700;
+}
+footer p:first-child{
+    color: var(--titlecolor);
+}
+footer p:nth-child(2){
+    color: #482BE7;
+}
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 40%;
+    margin-top: 2rem;
+}
+footer ul li a{
+    font-size: var(--h1font);
+    color: #9999A7;
+}
+footer ul li a > i{
+    transition: all 0.4s;
+}
+footer ul li a > i:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 800px) {
+    .navbar, header, .skills, .experiencia{
+        padding: 0 2rem;
+    }
+
+
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .leftHeader{
+        width: 100%;
+    }
+    .leftHeader h1{
+        margin: 5rem 0;
+        font-size: 3rem;
+    }
+    .leftHeader p{
+        text-align: justify;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .rightHeader{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .rightHeader img{
+        width: 27rem;
+    }
+
+
+    .skills h1{
+        font-size: 2.5rem;
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+    .skills > p {
+        font-size: 1.6rem;
+        color: var(--textcolor);
+        text-align: start;
+        width: 100%;
+    }
+    .skillCardsContainer {
+        height: 50%;
+        gap: 0;
+        margin-top: 0;
+    }
+    .skillCard h2{
+        font-size: 1.8rem;
+        color: var(--titlecolor);
+        text-align: start;
+    }
+    .skillCard p{
+        color: var(--textcolor);
+        font-size: 1.6rem;
+    }
+
+
+    .expContainer > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .expContainer > p {
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+    }
+    .expBtnContainer {
+        margin-top: 2rem;
+    }
+
+
+    footer p{
+        font-size: 1.8rem;
+    }
+    footer ul li a {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 801px) and (max-width: 1100px){
+    .skills {
+        height: 90vh;
+    }
+}
