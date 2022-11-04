@@ -19,78 +19,95 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>                                                                                                     
 <body>
-        <nav class="navbar">
+    <header>
+        <div class="navbar">
             <p>HolaJuniors.com</p>
-            <button>Email</button>
-        </nav>
-        
-        <header>
-            <div class="leftHeader">
+            <a href="">Email</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="aboutMe">
+            <div class="aboutMe__title">
                 <h1>Hola, Soy Raul Arias.<br> Web Developer.</h1>
                 <p>Aspirante a programador web, actualmente estoy estudiando y aprendiendo en cursos online y de manera autodidacta. Amante de la tecnologia y del mundo que nos rodea.</p>
             </div>
 
-            <figure class="rightHeader">
-                <img src="./assets/imagen.png" alt="Imagen">
+            <figure class="aboutMe__img">
+                <img src="./assets/Mask.svg" alt="Imagen">
             </figure>
-        </header>
+        </section>
 
-        <section class="skills">
-            <h1>Mis habilidades</h1>
+        <div class="borde"></div> <!-- Este borde no lo vi jeje -->
+
+        <section class="habilidades">
+            <h2>Mis habilidades</h2>
             <p>Actualmente manejo los estándares de la programación, pero cada día aprendiendo un poco mas, aspiro especializarme en una tecnología/framework de front-end pero también manejar un stack completo de tecnologías.</p>
 
-            <div class="skillCardsContainer">
-                <div class="skillCard">
-                    <h2>HTML</h2>
+            <div class="skillsContainer">
+                <div class="skillsContainer__card">
+                    <h3>HTML</h3>
                     <p>Nivel intermedio. Maquetacion de paginas web.</p>
                 </div>
 
-                <div class="skillCard">
-                    <h2>CSS</h2>
+                <div class="skillsContainer__card">
+                    <h3>CSS</h3>
                     <p>Nivel intermedio. Estilizar paginas web's con diseños responsivos.</p>
                 </div>
 
-                <div class="skillCard">
-                    <h2>JavaScript</h2>
+                <div class="skillsContainer__card">
+                    <h3>JavaScript</h3>
                     <p>Nivel Basico. Actualmente estudiando para llegar a un nivel avanzado.</p>
                 </div>
             </div>
         </section>
+    </main>
 
-        <section class="experiencia">
-            <div class="expContainer">
-                <h1>Mi Experiencia</h1>
-                <p>Actualmente tengo aproximadamente 2 meses tomando cursos en linea, tomandome al menos 2 horas diarias para estudiar y otras 2 para practicar, y pues aca estamos :)</p>
-                <div class="expBtnContainer"><a href="https://github.com/raulariias" target="_blank">Github</a></div>
+    <section class="experiencia">
+        <h2>Mi Experiencia</h2>
+        <p>Actualmente tengo aproximadamente 2 meses tomando cursos en linea, tomandome al menos 2 horas diarias para estudiar y otras 2 para practicar, y pues aca estamos :)</p>
+        <a href="https://github.com/raulariias" target="_blank">Github</a>
+    </section>
+    <!-- Carrusel -->
+    <section class="carruselContainer">
+        <div class="carruselSlide"><!-- 300% -->
 
-                <div class="expContainer--grid">
-                    <div class="expCard">
-                        <a href="https://raulariias.github.io/Google-Clon/" target="_blank"><img src="./assets/experiencia1.png" alt="Google Clon"></a>
-                        <h3>Google Clon</h3>
-                        <p>Curso practico haciendo un clon de google.</p>
-                    </div>
+            <div class="expContainer" id="card1"><!-- 33.4 -->
+                <div class="expCard">
+                    <a href="https://raulariias.github.io/Google-Clon/" target="_blank"><img src="./assets/experiencia1.png" alt="Google Clon"></a>
+                    <h3>Google Clon</h3>
+                    <p>Curso practico haciendo un clon de google.</p>
+                </div>
+                <a href="#card2" class="rightArrow"></a>
+            </div>
 
-                    <div class="expCard">
-                        <a href="https://raulariias.github.io/toma-tus-notas/" target="_blank"><img src="./assets/experiencia2.png" alt="Toma tus notas"></a>
-                        <h3>Toma tus notas!</h3>
-                        <p>Un index con un diseño agradable que funciona como blog donde puedes tomar todas las notas de tus clases y además practicar HTML y CSS.</p>
-                    </div>
+            <div class="expContainer"  id="card2"><!-- 33.4 -->
+                <a href="#card1" class="leftArrow"></a>
+                <div class="expCard">
+                    <a href="https://raulariias.github.io/toma-tus-notas/" target="_blank"><img src="./assets/experiencia2.png" alt="Toma tus notas"></a>
+                    <h3>Toma tus notas!</h3>
+                    <p>Un index con un diseño agradable que funciona como blog donde puedes tomar todas las notas de tus clases y además practicar HTML y CSS.</p>
+                </div>
+                <a href="#card3" class="rightArrow"></a>
+            </div>
 
-                    <div class="expCard">
-                        <a href="https://raulariias.github.io/curso-javascript-practico/" target="_blank"><img src="./assets/experiencia3.png" alt="JavaScript Basico"></a>
-                        <h3>YardSale</h3>
-                        <p>Curso practico de JavaScript basico.</p>
-                    </div>
+            <div class="expContainer" id="card3"><!-- 33.4 -->
+                <a href="#card2" class="leftArrow"></a>
+                <div class="expCard">
+                    <a href="https://raulariias.github.io/curso-javascript-practico/" target="_blank"><img src="./assets/experiencia3.png" alt="JavaScript Basico"></a>
+                    <h3>YardSale</h3>
+                    <p>Curso practico de JavaScript basico.</p>
                 </div>
             </div>
-        </section>
-
-        <footer>
-            <p>Si necesitas más información:</p>
-            <p>raularias24685@gmail.com</p>
-            <ul>
-                <li><a href="https://github.com/raulariias/curso-javascript-practico" target="_blank"><i class='bx bxl-github'></i></a></li>
-                <li><a href="https://www.instagram.com/elraalan/"><i class='bx bxl-instagram-alt' ></i></a></li>
-            </ul>
-        </footer>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Si necesitas más información:</p>
+        <p>raularias24685@gmail.com</p>
+        <ul>
+            <li><a href="https://github.com/raulariias/curso-javascript-practico" target="_blank"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://www.instagram.com/elraalan/"><i class='bx bxl-instagram-alt' ></i></a></li>
+        </ul>
+    </footer>
 </html>
